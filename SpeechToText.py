@@ -2,7 +2,7 @@ import sys
 import pyttsx3
 import speech_recognition as sr
 
-engine = pyttsx3.init()
+voice_engine = pyttsx3.init()
 r = sr.Recognizer()
 
 def printvoices():
@@ -26,7 +26,7 @@ def SpeechToText():
             MyText = r.recognize_google(audio1)
             print(MyText)
     except:
-        print("Someexception occurred")
+        print("Some exception occurred")
         pass
 def main(argv):
     #printvoices()
